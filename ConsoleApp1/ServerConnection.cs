@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Metadata;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json;
+
 
 
 namespace ConsoleApp1
@@ -16,7 +14,6 @@ namespace ConsoleApp1
         HttpClient client = new HttpClient();
         private readonly User _currentUser;
         private readonly string _authToken;
-        private readonly JsonSerializerSettings _jsonSettings;
         string baseUrl = "";
 
         public List<Book> books = new List<Book>();
