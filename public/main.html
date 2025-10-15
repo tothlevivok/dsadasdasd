@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Főoldal | Könyv</title>
+</head>
+<body>
+    <div>
+        <ul id="loadedBook"></ul>
+    </div>
+    <div>
+        <input type="text" id="titleInput" placeholder="Cím:">
+        <input type="text" id="authorInput" placeholder="író:">
+        <input type="text" id="publicationInput" placeholder="Kiadás éve:">
+        <input type="text" id="pageInput" placeholder="Oldalszám:">
+        <input type="text" id="genreInput" placeholder="Műfaj:">
+        <button onclick="AddBook()">Létrehozás</button>
+    </div>
+    <div>
+        <input type="number" id="mID" placeholder="Könyv ID:">
+        <input type="text" id="mTitle" placeholder="Cím:">
+        <input type="text" id="mAuthor" placeholder="író:">
+        <input type="text" id="mPublicationInput" placeholder="Kiadás éve:">
+        <input type="text" id="mPages" placeholder="Oldalszám:">
+        <input type="text" id="mGenre" placeholder="Műfaj:">
+        <button onclick="ModifyBook()">Módosítás</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
